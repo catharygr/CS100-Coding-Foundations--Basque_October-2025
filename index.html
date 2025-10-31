@@ -33,20 +33,22 @@
     <header class="header-wrapper">
       <div class="left-column">
         <div class="logo-wrapper">
-          <img
-            class="logo-codepen"
-            src="/images/codepen-wordmark-white.webp"
-            alt="Logo Codepen"
-          />
+          <a href="#">
+            <img
+              class="logo-codepen"
+              src="/images/codepen-wordmark-white.webp"
+              alt="Logo Codepen"
+            />
+          </a>
         </div>
         <div class="nav-wrapper">
           <span class="nav-title">Explore</span>
           <nav class="navigation">
             <ul>
-              <li>Pens</li>
-              <li>Projects</li>
-              <li>Posts</li>
-              <li>Collections</li>
+              <a href="#"><li>Pens</li></a>
+              <a href="#"><li>Projects</li></a>
+              <a href="#"><li>Posts</li></a>
+              <a href="#"><li>Collections</li></a>
             </ul>
           </nav>
         </div>
@@ -71,10 +73,14 @@
         </div>
       </div>
       <div class="right-column">
-        <button class="create-wrapper">Create</button>
-        <button class="search-wrapper">Search</button>
-        <button class="login-wrapper">Log in</button>
-        <button class="signup-wrapper">Sign Up</button>
+        <button class="btn">
+          Create <i class="fa-solid fa-chevron-down chev-create"></i>
+        </button>
+        <button class="btn btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="btn">Log in</button>
+        <button class="btn">Sign Up</button>
       </div>
     </header>
     <main></main>

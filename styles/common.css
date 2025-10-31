@@ -4,3 +4,21 @@ body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
 }
+
+.btn {
+  background-color: rgb(54, 56, 63);
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(78, 85, 99);
+  color: rgb(236, 225, 135);
+}
