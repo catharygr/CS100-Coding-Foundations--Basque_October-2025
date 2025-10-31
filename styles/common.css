@@ -3,6 +3,7 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
+  margin: 0;
 }
 
 .btn {

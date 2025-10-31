@@ -1,0 +1,17 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-wrapper > .btn-footer {
+  flex: 1 1 auto;
+  border: 1px solid rgb(124, 127, 140);
+  border-radius: 0;
+}
+
+.footer-wrapper > .btn-footer span {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: -1.6px;
+}
