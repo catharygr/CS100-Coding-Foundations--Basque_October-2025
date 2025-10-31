@@ -2,8 +2,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  padding: 5px 15px;
 }
 
-.header-wrapper .logo-codepen {
-  width: 200px;
+.header-wrapper > .left-column {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header-wrapper > .left-column > .logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-wrapper > .left-column > .logo-wrapper > .logo-codepen {
+  width: 160px;
+}
+
+.header-wrapper > .left-column > .nav-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper > .left-column > .nav-wrapper > .nav-title {
+  text-transform: uppercase;
+  color: rgb(236, 225, 135);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.header-wrapper > .left-column > .nav-wrapper > .navigation ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  font-size: 1.2rem;
+}
+.header-wrapper > .left-column > .spark-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+.header-wrapper > .left-column > .spark-wrapper > .chev-position {
+  position: absolute;
+  right: 6px;
+  bottom: 7px;
+  font-size: 0.8rem;
+  color: rgb(172, 172, 172);
+  z-index: -1;
+}
+.header-wrapper > .left-column > .spark-wrapper select {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: rgb(172, 172, 172);
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  transform: translate(-10px, -3px);
 }
