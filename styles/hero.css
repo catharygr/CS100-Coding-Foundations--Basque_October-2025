@@ -16,6 +16,7 @@
   font-size: 1.6rem;
   font-weight: 100;
   margin: 0;
+  color: rgb(226, 226, 226);
 }
 
 .hero > .hero-title span {
@@ -25,6 +26,7 @@
 .hero > .hero-subtitle {
   grid-column: 2/3;
   margin: 0;
+  color: rgb(181, 178, 176);
 }
 
 .hero > .hero-image-wrapper {
@@ -93,17 +95,23 @@
   .hero {
     grid-template-columns: 40px 4fr 3fr 40px;
     grid-template-rows: repeat(3, auto) 40px auto;
-    column-gap: 10px;
+    padding-top: 50px;
   }
   .hero > .hero-title {
     grid-row: 1/2;
+    margin-right: 2rem;
   }
   .hero > .hero-subtitle {
     grid-row: 2/3;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
   }
   .hero > .hero-image-wrapper {
     grid-column: 3/5;
     grid-row: 1/5;
+    align-self: start;
+    height: 100%;
   }
   .hero > .hero-image-wrapper img {
     object-fit: cover;
@@ -113,6 +121,8 @@
   }
   .hero > .hero-menu {
     grid-column: 1/5;
+  }
+  .hero > .hero-action-wrapper > .btn-action {
   }
 }
 
