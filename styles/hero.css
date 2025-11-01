@@ -1,28 +1,90 @@
-.hero-menu {
+.hero {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  row-gap: 16px;
+  padding-top: 20px;
+  background: #42464f;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(66, 70, 79, 1) 0%,
+    rgba(10, 11, 12, 1) 100%
+  );
+}
+
+.hero > .hero-title {
+  grid-column: 2/3;
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.hero > .hero-title span {
+  font-weight: 700;
+}
+
+.hero > .hero-subtitle {
+  grid-column: 2/3;
+  margin: 0;
+}
+
+.hero > .hero-image-wrapper {
+  grid-column: 2/3;
+}
+
+.hero > .hero-image-wrapper > .hero-image-title {
+  font-weight: 700;
+  margin: 0 0 2px;
+}
+
+.hero > .hero-image-wrapper > .hero-image-title span {
+  color: rgb(97, 221, 255);
+}
+.hero > .hero-action-wrapper {
+  grid-column: 2/3;
+  display: flex;
+  gap: 10px;
+}
+
+.hero > .hero-menu {
+  grid-column: 2/3;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.hero-menu > .btn-hero-menu {
+.hero > .hero-menu > .btn-hero-menu {
   border: 1px solid rgb(124, 127, 140);
   border-radius: 0;
 }
 
-.hero-menu > .btn-hero-menu span {
+.hero > .hero-menu > .btn-hero-menu span {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.4rem;
   letter-spacing: -1.6px;
 }
 
+.hero > .hero-action-wrapper > .btn-action {
+  background-color: rgb(75, 206, 121);
+  color: rgb(5, 5, 5);
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.hero > .hero-action-wrapper > .btn-alt-action {
+  font-size: 200;
+  text-transform: capitalize;
+  background-color: rgb(5, 5, 5);
+}
+
 @media (min-width: 600px) {
-  .hero-menu {
+  .hero > .hero-menu {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1100px) {
-  .hero-menu {
+  .hero > .hero-menu {
     grid-template-columns: repeat(4, 1fr);
   }
 }
