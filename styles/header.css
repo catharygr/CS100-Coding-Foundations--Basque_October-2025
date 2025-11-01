@@ -57,6 +57,7 @@
   flex-direction: column;
   justify-content: end;
   position: relative;
+  z-index: 1;
 }
 .header-wrapper > .left-column > .spark-wrapper > .chev-position {
   position: absolute;
