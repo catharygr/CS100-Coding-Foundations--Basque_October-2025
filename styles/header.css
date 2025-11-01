@@ -105,7 +105,7 @@
 }
 
 .header-wrapper > .right-column > .input-icon-wrapper input:focus {
-  width: 160px;
+  width: 150px;
   position: absolute;
   transform: translateY(-50%);
 }
