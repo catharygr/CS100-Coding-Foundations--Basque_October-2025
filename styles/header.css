@@ -1,14 +1,15 @@
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 1rem;
   padding: 12px 12px 12px 23px;
   background-color: rgb(5, 5, 5);
 }
 
 .header-wrapper > .left-column {
+  justify-self: start;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.5rem;
 }
 
@@ -20,6 +21,7 @@
 
 .header-wrapper > .left-column > .logo-wrapper > a > .logo-codepen {
   width: 160px;
+  min-width: 120px;
 }
 
 .header-wrapper > .left-column > .nav-wrapper {
@@ -79,20 +81,75 @@
 }
 
 .header-wrapper > .right-column {
+  justify-self: end;
   display: flex;
+  align-items: center;
   gap: 12px;
+  white-space: nowrap;
 }
+
+.header-wrapper > .right-column > .input-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.header-wrapper > .right-column > .input-icon-wrapper input {
+  font-size: inherit;
+  background-color: rgb(5, 5, 5);
+  color: rgb(240, 240, 240);
+  padding: 0 0 0 50px;
+  width: 0px;
+  height: 48px;
+  border: none;
+}
+
+.header-wrapper > .right-column > .input-icon-wrapper input:focus {
+  width: 160px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.header-wrapper > .right-column > .input-icon-wrapper .fa-magnifying-glass {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(124, 127, 140);
+  pointer-events: none;
+  font-size: 2rem;
+}
+
 .header-wrapper > .right-column > .btn > .chev-create {
   color: rgb(75, 206, 121);
   font-size: 1.3rem;
 }
-.header-wrapper > .right-column > .btn-search {
-  background-color: transparent;
-  color: rgb(124, 127, 140);
-  font-size: 1.8rem;
-  padding: 0 8px;
+
+@media (max-width: 1100px) {
+  .header-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .header-wrapper > .left-column {
+    justify-self: center;
+  }
+  .header-wrapper > .right-column {
+    justify-self: center;
+  }
+
+  .header-wrapper > .right-column > .btn-option {
+    font-size: 1rem;
+    padding: 10px 5wv;
+  }
+  .header-wrapper > .right-column > .btn > .chev-create {
+    font-size: 1rem;
+  }
 }
 
-.header-wrapper > .right-column > .btn-search:hover {
-  color: rgb(236, 225, 135);
+@media (max-width: 450px) {
+  .header-wrapper {
+    padding: 12px;
+  }
+  .header-wrapper > .right-column > .btn-option {
+    font-size: 0.8rem;
+    padding: 8px 3vw;
+  }
 }
