@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(25, 26, 29);
   color: rgb(255, 255, 255);
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -22,4 +22,9 @@ body {
 .btn:hover {
   background-color: rgb(78, 85, 99);
   color: rgb(236, 225, 135);
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

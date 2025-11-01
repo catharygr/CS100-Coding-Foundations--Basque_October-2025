@@ -1,10 +1,9 @@
 .hero-menu {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .hero-menu > .btn-hero-menu {
-  flex: 1 1 auto;
   border: 1px solid rgb(124, 127, 140);
   border-radius: 0;
 }
@@ -14,4 +13,16 @@
   font-weight: 900;
   font-size: 1.4rem;
   letter-spacing: -1.6px;
+}
+
+@media (min-width: 600px) {
+  .hero-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .hero-menu {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
