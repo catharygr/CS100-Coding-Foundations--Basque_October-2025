@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   grid-template-columns: 10px 1fr 10px;
-  row-gap: 16px;
+  row-gap: 25px;
   padding-top: 20px;
   background: #42464f;
   background: radial-gradient(
@@ -41,11 +41,6 @@
 .hero > .hero-image-wrapper > .hero-image-title span {
   color: rgb(97, 221, 255);
 }
-.hero > .hero-action-wrapper {
-  grid-column: 2/3;
-  display: flex;
-  gap: 10px;
-}
 
 .hero > .hero-menu {
   grid-column: 2/3;
@@ -64,6 +59,12 @@
   font-size: 1.4rem;
   letter-spacing: -1.6px;
 }
+.hero > .hero-action-wrapper {
+  grid-column: 2/3;
+  display: flex;
+  gap: 10px;
+  align-self: start;
+}
 
 .hero > .hero-action-wrapper > .btn-action {
   background-color: rgb(75, 206, 121);
@@ -74,7 +75,7 @@
 }
 
 .hero > .hero-action-wrapper > .btn-alt-action {
-  font-size: 200;
+  font-weight: 200;
   text-transform: capitalize;
   background-color: rgb(5, 5, 5);
 }
@@ -94,12 +95,12 @@
 @media (min-width: 800px) {
   .hero {
     grid-template-columns: 40px 4fr 3fr 40px;
-    grid-template-rows: repeat(3, auto) 40px auto;
+    grid-template-rows: repeat(5, auto);
     padding-top: 50px;
   }
   .hero > .hero-title {
     grid-row: 1/2;
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
   .hero > .hero-subtitle {
     grid-row: 2/3;
@@ -119,15 +120,44 @@
     width: 100%;
     height: 100%;
   }
+
   .hero > .hero-menu {
     grid-column: 1/5;
-  }
-  .hero > .hero-action-wrapper > .btn-action {
   }
 }
 
 @media (min-width: 1100px) {
+  .hero > .hero-title,
+  .hero > .hero-subtitle {
+    margin-right: 10rem;
+  }
+
+  .hero > .hero-action-wrapper > .btn-action,
+  .btn-alt-action {
+    font-size: 2rem;
+  }
   .hero > .hero-menu {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero > .hero-title {
+    font-size: 3rem;
+  }
+  .hero > .hero-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero > .hero-title {
+    font-size: 4rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+  }
+  .hero > .hero-subtitle {
+    font-size: 3rem;
+    margin-right: 10rem;
   }
 }
