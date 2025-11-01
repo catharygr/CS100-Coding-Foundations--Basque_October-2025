@@ -72,6 +72,11 @@
   font-size: 1.3rem;
   font-weight: 200;
   text-transform: capitalize;
+  transition: 0.3 ease-in-out;
+}
+
+.hero > .hero-action-wrapper > .btn-action:hover {
+  transform: scale(1.06);
 }
 
 .hero > .hero-action-wrapper > .btn-alt-action {

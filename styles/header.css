@@ -8,9 +8,10 @@
 
 .header-wrapper > .left-column {
   justify-self: start;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+  display: grid;
+  align-self: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.8rem;
 }
 
 .header-wrapper > .left-column > .logo-wrapper {
@@ -144,12 +145,22 @@
   }
 }
 
+@media (max-width: 700px) {
+  .header-wrapper > .left-column {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    justify-items: center;
+  }
+  .header-wrapper > .left-column > .nav-wrapper {
+    align-items: center;
+  }
+}
 @media (max-width: 450px) {
   .header-wrapper {
     padding: 12px;
   }
   .header-wrapper > .right-column > .btn-option {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 8px 3vw;
   }
 }
