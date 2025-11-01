@@ -1,15 +1,15 @@
-.footer-wrapper {
+.hero-menu {
   display: flex;
   justify-content: center;
 }
 
-.footer-wrapper > .btn-footer {
+.hero-menu > .btn-hero-menu {
   flex: 1 1 auto;
   border: 1px solid rgb(124, 127, 140);
   border-radius: 0;
 }
 
-.footer-wrapper > .btn-footer span {
+.hero-menu > .btn-hero-menu span {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.4rem;
